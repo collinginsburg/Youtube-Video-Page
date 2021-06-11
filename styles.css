@@ -1,0 +1,134 @@
+.whole-page-wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #f9f9f9;
+}
+.main-page-wrapper{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+    grid-template-columns: 1fr 3fr 2fr 1fr;
+    grid-template-areas: 
+        ". main suggestedvids ."
+    ;
+
+}
+
+
+
+/* nav bar section */
+
+.top-menu{
+    background-color: #ffffff;
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    z-index: 2;
+    top:0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.menu-left{
+    display: flex;
+    align-items: center;
+}
+
+.hamburger{
+    fill: #606060;
+    height: 15px;
+    margin: 0px 20px 0px 20px;
+}
+.ytlogo{
+    width: 85px;
+    /* height: 15px; */
+}
+
+.menu-search-bar{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-search-bar-unit{
+    display: flex;
+    width: 100%;
+    height: 32px;
+    border: 1px rgb(175, 175, 175) solid;
+    border-radius: 3px;
+}
+
+.search-bar-input{
+    width: 100%;
+    padding-left: 10px;
+    font-size: 16px;
+    border: none;
+    /* height: 200%; */
+}
+.search-bar-button{
+    width: 12%;
+    background-color: #f8f8f8;
+    border-left: 1px rgb(175, 175, 175) solid;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.maglens{
+    width: 20px;
+    fill: #333;
+    opacity: .6;
+}
+.search-bar-mic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+}
+.mic-icon{
+    width: 22px;
+    fill: rgb(96, 96, 96);
+}
+
+.menu-google-account{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.menu-google-account svg{
+    fill:rgb(96, 96, 96);
+}
+.google-icon{
+    margin: 15px;
+}
+
+.add-video-icon{
+    width: 25px;
+}
+.grid-icon{
+    width: 25px;
+}
+.bell-icon{
+    width: 25px;
+}
+.user-icon{
+    margin-right: 40px;
+    border-radius: 50%;
+}
+/* main section */
+
+main{
+    grid-area: main;
+}
+.main-video{
+    height: 700px;
+}
+/* suggested videos section */
+
+.suggested-videos{
+    grid-area: suggestedvids;
+}
